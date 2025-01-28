@@ -1,32 +1,26 @@
 <script setup lang="ts">
-
 import GlobalHeader from '@/components/GlobalHeader.vue'
+
 </script>
 
 <template>
-<div id="basicLayout">
-  <a-layout style="min-width: 160vh;min-height: 100vh;">
-    <a-layout-header class="header">
-      <GlobalHeader />
-    </a-layout-header>
-    <a-layout-content class="content">
-      <router-view />
-    </a-layout-content>
-    <a-layout-footer>
+  <div id="basicLayout">
+    <a-layout style=" min-height: 100vh;">
+      <a-layout-header class="header">
+        <GlobalHeader />
+      </a-layout-header>
+      <a-layout-content class="content">
+        <router-view />
+      </a-layout-content>
       <a-layout-footer class="footer">
-        <a href="https://github.com/bzdhhd" target="_blank">
-          Github by bzdhhd
-        </a>
+        <a href="https://github.com/bzdhhd" target="_blank"> Github by bzdhhd </a>
       </a-layout-footer>
-
-    </a-layout-footer>
-  </a-layout>
-</div>
+    </a-layout>
+  </div>
 </template>
 
 <style scoped>
 #basicLayout {
-
 }
 #basicLayout .header {
   padding-inline: 20px;
@@ -36,8 +30,8 @@ import GlobalHeader from '@/components/GlobalHeader.vue'
 }
 
 #basicLayout .content {
-  background: linear-gradient(to right,#fefefe,#fff);
-  margin-bottom: 28px;
+  background: linear-gradient(to right, #fefefe, #fff);
+  margin-bottom: 48px; /* Adjust according to footer height */
   padding: 20px;
 }
 #basicLayout .footer {
@@ -49,5 +43,4 @@ import GlobalHeader from '@/components/GlobalHeader.vue'
   right: 0;
   text-align: center;
 }
-
 </style>
